@@ -10,6 +10,7 @@ import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.compo
 import { WantContractComponent } from './want-contract/want-contract.component';
 import { HomeCheckIdentityComponent } from './home-check-identity/home-check-identity.component';
 import { FaceCaptureComponent } from './face-capture/face-capture.component';
+import { FaceResultComponent } from './face-result/face-result.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FaceCaptureComponent } from './face-capture/face-capture.component';
     WantContractComponent,
     HomeCheckIdentityComponent,
     FaceCaptureComponent,
+    FaceResultComponent,
     
   ],
   imports: [

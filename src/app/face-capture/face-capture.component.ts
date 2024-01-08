@@ -14,7 +14,7 @@ export class FaceCaptureComponent implements OnInit{
   ngOnInit(): void {
     setTimeout(() => {
       if(this.route.url == '/face-capture')
-      this.route.navigate(['/']);
+      this.route.navigate(['/face-result']);
     }, 10000);
   }
 }

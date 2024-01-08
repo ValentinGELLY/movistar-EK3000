@@ -7,6 +7,7 @@ import { FullPrepaymentComponent } from './full-prepayment/full-prepayment.compo
 import { WantContractComponent } from './want-contract/want-contract.component';
 import { HomeCheckIdentityComponent } from './home-check-identity/home-check-identity.component';
 import { FaceCaptureComponent } from './face-capture/face-capture.component';
+import { FaceResultComponent } from './face-result/face-result.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'prepaid-tariffs', component: PrepaidTariffsComponent },
   { path: 'want-contract', component: WantContractComponent },
   { path: 'home-check-identity', component: HomeCheckIdentityComponent },
-  { path: 'face-capture', component: FaceCaptureComponent }
+  { path: 'face-capture', component: FaceCaptureComponent },
+  { path: 'face-result', component: FaceResultComponent }
 ];
 
 @NgModule({
