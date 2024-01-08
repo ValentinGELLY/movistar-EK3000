@@ -11,6 +11,7 @@ import { WantContractComponent } from './want-contract/want-contract.component';
 import { HomeCheckIdentityComponent } from './home-check-identity/home-check-identity.component';
 import { FaceCaptureComponent } from './face-capture/face-capture.component';
 import { FaceResultComponent } from './face-result/face-result.component';
+import { RegistryDocumentComponent } from './registry-document/registry-document.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FaceResultComponent } from './face-result/face-result.component';
     HomeCheckIdentityComponent,
     FaceCaptureComponent,
     FaceResultComponent,
+    RegistryDocumentComponent,
     
   ],
   imports: [
