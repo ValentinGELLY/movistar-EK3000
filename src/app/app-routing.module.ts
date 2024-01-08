@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
-import { TarificaPrepagoComponent } from './tarifica-prepago/tarifica-prepago.component';
+import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.component';
+import { FullPrepaymentComponent } from './full-prepayment/full-prepayment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
   { path: 'pagina-principal', component: PaginaPrincipalComponent },
-  { path: 'tarifica-prepago', component: TarificaPrepagoComponent }
+  { path: 'full-prepayment', component: FullPrepaymentComponent },
+  { path: 'prepaid-tariffs', component: PrepaidTariffsComponent },
 ];
 
 @NgModule({
