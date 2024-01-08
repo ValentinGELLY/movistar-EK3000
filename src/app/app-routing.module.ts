@@ -5,6 +5,7 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.component';
 import { FullPrepaymentComponent } from './full-prepayment/full-prepayment.component';
 import { WantContractComponent } from './want-contract/want-contract.component';
+import { HomeCheckIdentityComponent } from './home-check-identity/home-check-identity.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'full-prepayment', component: FullPrepaymentComponent },
   { path: 'prepaid-tariffs', component: PrepaidTariffsComponent },
   { path: 'want-contract', component: WantContractComponent },
+  { path: 'home-check-identity', component: HomeCheckIdentityComponent },
 ];
 
 @NgModule({

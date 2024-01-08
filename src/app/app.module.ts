@@ -8,6 +8,7 @@ import { AllPageMovistarComponent } from './all-page-movistar/all-page-movistar.
 import { FullPrepaymentComponent } from './full-prepayment/full-prepayment.component';
 import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.component';
 import { WantContractComponent } from './want-contract/want-contract.component';
+import { HomeCheckIdentityComponent } from './home-check-identity/home-check-identity.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { WantContractComponent } from './want-contract/want-contract.component';
     FullPrepaymentComponent,
     PrepaidTariffsComponent,
     WantContractComponent,
+    HomeCheckIdentityComponent,
     
   ],
   imports: [
