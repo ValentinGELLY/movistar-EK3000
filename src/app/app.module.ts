@@ -7,6 +7,7 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 import { AllPageMovistarComponent } from './all-page-movistar/all-page-movistar.component';
 import { FullPrepaymentComponent } from './full-prepayment/full-prepayment.component';
 import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.component';
+import { WantContractComponent } from './want-contract/want-contract.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { PrepaidTariffsComponent } from './prepaid-tariffs/prepaid-tariffs.compo
     AllPageMovistarComponent,
     FullPrepaymentComponent,
     PrepaidTariffsComponent,
+    WantContractComponent,
     
   ],
   imports: [
