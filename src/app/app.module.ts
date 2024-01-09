@@ -12,6 +12,7 @@ import { HomeCheckIdentityComponent } from './home-check-identity/home-check-ide
 import { FaceCaptureComponent } from './face-capture/face-capture.component';
 import { FaceResultComponent } from './face-result/face-result.component';
 import { RegistryDocumentComponent } from './registry-document/registry-document.component';
+import { ScanDocumentoComponent } from './scan-documento/scan-documento.component';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { RegistryDocumentComponent } from './registry-document/registry-document
     FaceCaptureComponent,
     FaceResultComponent,
     RegistryDocumentComponent,
-    
+    ScanDocumentoComponent,
   ],
   imports: [
     BrowserModule,
