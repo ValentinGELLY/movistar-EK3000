@@ -18,6 +18,7 @@ import { WaitingScreenComponent } from './waiting-screen/waiting-screen.componen
 import { InformationConsentComponent } from './information-consent/information-consent.component';
 import { FormPersonalInformationComponent } from './form-personal-information/form-personal-information.component';
 import { TestFormatComponent } from './test-format/test-format.component';
+import { LegalConditionComponent } from './legal-condition/legal-condition.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { TestFormatComponent } from './test-format/test-format.component';
     InformationConsentComponent,
     FormPersonalInformationComponent,
     TestFormatComponent,
+    LegalConditionComponent,
   ],
   imports: [
     BrowserModule,

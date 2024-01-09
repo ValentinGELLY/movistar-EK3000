@@ -1,23 +1,22 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { OnInit } from '@angular/core';
+import { AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-form-personal-information',
   templateUrl: './form-personal-information.component.html',
   styleUrls: ['./form-personal-information.component.scss','../app.component.scss']
 })
-export class FormPersonalInformationComponent implements OnInit{
+export class FormPersonalInformationComponent implements AfterViewInit{
 
   allGood: boolean = true;
   canContinue: boolean = false;
 
   constructor(private route: Router) { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     let btnContinuar = document.getElementById('btnContinuar');
     btnContinuar!.addEventListener('click', this.continuar);
-    
     let allInput = document.querySelectorAll('input');
     for (let index = 0; index < allInput.length; index++) {
       const element = allInput[index];
@@ -41,6 +40,7 @@ export class FormPersonalInformationComponent implements OnInit{
         this.allGood= false;
       }
     }
+    
         
   }
 
@@ -55,15 +55,22 @@ export class FormPersonalInformationComponent implements OnInit{
     if(event.target.value != "" && event.target.type != "radio"){
       event.target.style.border = "none";
       event.target.style.borderBottom = "SOLID 1px #2ECC71";
-    }else{
-      event.target.style.border = "none";
-      event.target.style.borderBottom = "SOLID 1px red";
+      this.canContinue= true;
       for (let index = 0; index < document.getElementsByTagName("input").length; index++) {
         const element = document.getElementsByTagName("input")[index];
         if(element.value == "" && element.type != "radio"){
           this.canContinue= false;
         }
       }
+      if(this.canContinue){
+        document.getElementById("continuarSection")!.style.display = "none";
+        document.getElementById("continuarSection2")!.style.display = "block";
+      }
+      console.log(this.canContinue);
+    }else{
+      event.target.style.border = "none";
+      event.target.style.borderBottom = "SOLID 1px red";     
+
     }
 
   }

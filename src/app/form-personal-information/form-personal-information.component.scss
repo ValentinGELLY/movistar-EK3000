@@ -261,14 +261,18 @@ b{
     width: 40vh;
 }
 
-#continuarSection{
+#continuarSection ,#continuarSection2{
     width: 45vh;
     margin-left: auto;
     margin-right: auto;
     text-align: right;
 }
 
-#continuarSection img{
+#continuarSection img, #continuarSection2 img{
     width: 40%;
     margin-top: 20px;
+}
+
+#continuarSection2{
+    display: none;
 }

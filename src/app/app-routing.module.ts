@@ -15,9 +15,9 @@ import { IdentityValidationComponent } from './identity-validation/identity-vali
 import { InformationConsentComponent } from './information-consent/information-consent.component';
 import { FormPersonalInformationComponent } from './form-personal-information/form-personal-information.component';
 import { TestFormatComponent } from './test-format/test-format.component';
+import { LegalConditionComponent } from './legal-condition/legal-condition.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
   { path: 'pagina-principal', component: PaginaPrincipalComponent },
   { path: 'full-prepayment', component: FullPrepaymentComponent },
   { path: 'prepaid-tariffs', component: PrepaidTariffsComponent },
@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'information-consent', component: InformationConsentComponent },
   { path: 'form-personal-information', component: FormPersonalInformationComponent },
   { path: 'test-format', component: TestFormatComponent },
+  { path: 'legal-condition', component: LegalConditionComponent },
 ];
 
 @NgModule({
