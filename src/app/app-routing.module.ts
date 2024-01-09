@@ -13,7 +13,8 @@ import { ScanDocumentoComponent } from './scan-documento/scan-documento.componen
 import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
 import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
 import { InformationConsentComponent } from './information-consent/information-consent.component';
-
+import { FormPersonalInformationComponent } from './form-personal-information/form-personal-information.component';
+import { TestFormatComponent } from './test-format/test-format.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
@@ -28,7 +29,9 @@ const routes: Routes = [
   { path: 'scan-documento', component: ScanDocumentoComponent },
   { path: 'waiting-screen', component: WaitingScreenComponent },
   { path: 'identity-validation', component: IdentityValidationComponent },
-  { path: 'information-consent', component: InformationConsentComponent }
+  { path: 'information-consent', component: InformationConsentComponent },
+  { path: 'form-personal-information', component: FormPersonalInformationComponent },
+  { path: 'test-format', component: TestFormatComponent },
 ];
 
 @NgModule({

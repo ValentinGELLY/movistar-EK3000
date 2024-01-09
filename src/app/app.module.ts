@@ -16,6 +16,8 @@ import { ScanDocumentoComponent } from './scan-documento/scan-documento.componen
 import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
 import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
 import { InformationConsentComponent } from './information-consent/information-consent.component';
+import { FormPersonalInformationComponent } from './form-personal-information/form-personal-information.component';
+import { TestFormatComponent } from './test-format/test-format.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { InformationConsentComponent } from './information-consent/information-c
     IdentityValidationComponent,
     WaitingScreenComponent,
     InformationConsentComponent,
+    FormPersonalInformationComponent,
+    TestFormatComponent,
   ],
   imports: [
     BrowserModule,

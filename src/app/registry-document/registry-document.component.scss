@@ -10,10 +10,13 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #pais{
-    width: 17%;
+    width: 100%;
 }
 
 #documentoList{
