@@ -10,6 +10,9 @@ import { FaceCaptureComponent } from './face-capture/face-capture.component';
 import { FaceResultComponent } from './face-result/face-result.component';
 import { RegistryDocumentComponent } from './registry-document/registry-document.component';
 import { ScanDocumentoComponent } from './scan-documento/scan-documento.component';
+import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
+import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
@@ -22,6 +25,8 @@ const routes: Routes = [
   { path: 'face-result', component: FaceResultComponent },
   { path: 'registry-document', component: RegistryDocumentComponent },
   { path: 'scan-documento', component: ScanDocumentoComponent },
+  { path: 'waiting-screen', component: WaitingScreenComponent },
+  { path: 'identity-validation', component: IdentityValidationComponent }
 ];
 
 @NgModule({

@@ -13,6 +13,8 @@ import { FaceCaptureComponent } from './face-capture/face-capture.component';
 import { FaceResultComponent } from './face-result/face-result.component';
 import { RegistryDocumentComponent } from './registry-document/registry-document.component';
 import { ScanDocumentoComponent } from './scan-documento/scan-documento.component';
+import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
+import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { ScanDocumentoComponent } from './scan-documento/scan-documento.componen
     FaceResultComponent,
     RegistryDocumentComponent,
     ScanDocumentoComponent,
+    IdentityValidationComponent,
+    WaitingScreenComponent,
   ],
   imports: [
     BrowserModule,
