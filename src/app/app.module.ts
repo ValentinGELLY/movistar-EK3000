@@ -19,6 +19,8 @@ import { InformationConsentComponent } from './information-consent/information-c
 import { FormPersonalInformationComponent } from './form-personal-information/form-personal-information.component';
 import { TestFormatComponent } from './test-format/test-format.component';
 import { LegalConditionComponent } from './legal-condition/legal-condition.component';
+import { PaymentComponent } from './payment/payment.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { LegalConditionComponent } from './legal-condition/legal-condition.compo
     FormPersonalInformationComponent,
     TestFormatComponent,
     LegalConditionComponent,
+    PaymentComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
