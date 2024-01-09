@@ -15,6 +15,7 @@ import { RegistryDocumentComponent } from './registry-document/registry-document
 import { ScanDocumentoComponent } from './scan-documento/scan-documento.component';
 import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
 import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
+import { InformationConsentComponent } from './information-consent/information-consent.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { WaitingScreenComponent } from './waiting-screen/waiting-screen.componen
     ScanDocumentoComponent,
     IdentityValidationComponent,
     WaitingScreenComponent,
+    InformationConsentComponent,
   ],
   imports: [
     BrowserModule,

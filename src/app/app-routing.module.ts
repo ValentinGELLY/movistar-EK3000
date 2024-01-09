@@ -12,6 +12,7 @@ import { RegistryDocumentComponent } from './registry-document/registry-document
 import { ScanDocumentoComponent } from './scan-documento/scan-documento.component';
 import { WaitingScreenComponent } from './waiting-screen/waiting-screen.component';
 import { IdentityValidationComponent } from './identity-validation/identity-validation.component';
+import { InformationConsentComponent } from './information-consent/information-consent.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'registry-document', component: RegistryDocumentComponent },
   { path: 'scan-documento', component: ScanDocumentoComponent },
   { path: 'waiting-screen', component: WaitingScreenComponent },
-  { path: 'identity-validation', component: IdentityValidationComponent }
+  { path: 'identity-validation', component: IdentityValidationComponent },
+  { path: 'information-consent', component: InformationConsentComponent }
 ];
 
 @NgModule({
