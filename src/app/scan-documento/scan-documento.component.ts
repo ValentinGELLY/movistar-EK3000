@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-scan-documento',
@@ -9,9 +10,14 @@ import { Router } from '@angular/router';
 export class ScanDocumentoComponent {
   countdown: any;
 
-  constructor(private router: Router) { }
+
+  constructor(private router: Router, private appService: AppService) { }
+
+  scanVisited: number = this.appService.scanVisited;
 
   ngOnInit() {
+    console.log(this.appService.scanVisited);
+    this.appService.scanVisited++;
     this.countdown = 5;
     let interval = setInterval(() => {
       if (this.countdown > 0) {

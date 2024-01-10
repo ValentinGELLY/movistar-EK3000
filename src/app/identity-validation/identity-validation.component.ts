@@ -13,6 +13,7 @@ export class IdentityValidationComponent {
 
   ngOnInit() {
     setTimeout(() => {
+      if(this.router.url == '/identity-validation')
       this.router.navigate(['/information-consent']);
     }, 5000);
   }

@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     margin-left: 350px;
-    margin-top: 310px;
+    margin-top: 21%;
 }
 #countdown{
     font-size: 4em;
@@ -30,4 +30,12 @@
 
 #countdownSection img{
     width: 65%;
+}
+
+#imageCapture{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 48%;
+    width: 70%;
 }

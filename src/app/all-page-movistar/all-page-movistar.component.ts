@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router} from "@angular/router";
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-all-page-movistar',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./all-page-movistar.component.scss']
 })
 export class AllPageMovistarComponent {
+
+
+
+  constructor(private router: Router, private service:AppService) { }
+
+  ngOnInit(): void {
+    document.getElementById("back")!.addEventListener("click", () => {
+      this.service.navigateBack(this.router.url);
+    });
+      
+  }
+
 
 }

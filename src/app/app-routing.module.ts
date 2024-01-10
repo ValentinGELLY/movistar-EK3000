@@ -17,6 +17,7 @@ import { FormPersonalInformationComponent } from './form-personal-information/fo
 import { TestFormatComponent } from './test-format/test-format.component';
 import { LegalConditionComponent } from './legal-condition/legal-condition.component';
 import { PaymentComponent } from './payment/payment.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   { path: 'pagina-principal', component: PaginaPrincipalComponent },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'test-format', component: TestFormatComponent },
   { path: 'legal-condition', component: LegalConditionComponent },
   { path: 'payment', component: PaymentComponent },
+  { path: 'welcome', component: WelcomeComponent },
 ];
 
 @NgModule({

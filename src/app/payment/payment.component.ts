@@ -17,7 +17,7 @@ countdown: any;
       this.countdown--;
       if(this.countdown == 0 && this.router.url == "/payment"){
         clearInterval(interval);
-        window.location.href = ""
+        window.location.href = "/welcome"
       }
     }, 1000);
   }
