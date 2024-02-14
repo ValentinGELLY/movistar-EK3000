@@ -18,9 +18,10 @@ import { TestFormatComponent } from './test-format/test-format.component';
 import { LegalConditionComponent } from './legal-condition/legal-condition.component';
 import { PaymentComponent } from './payment/payment.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ValidationScreenComponent } from './validation-screen/validation-screen.component';
 
 const routes: Routes = [
-  { path: 'pagina-principal', component: PaginaPrincipalComponent },
+  { path: 'ES/pagina-principal', component: PaginaPrincipalComponent },
   { path: 'full-prepayment', component: FullPrepaymentComponent },
   { path: 'prepaid-tariffs', component: PrepaidTariffsComponent },
   { path: 'want-contract', component: WantContractComponent },
@@ -37,6 +38,9 @@ const routes: Routes = [
   { path: 'legal-condition', component: LegalConditionComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'validation-screen', component: ValidationScreenComponent },
+  
+
 ];
 
 @NgModule({

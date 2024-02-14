@@ -21,6 +21,7 @@ import { TestFormatComponent } from './test-format/test-format.component';
 import { LegalConditionComponent } from './legal-condition/legal-condition.component';
 import { PaymentComponent } from './payment/payment.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ValidationScreenComponent } from './validation-screen/validation-screen.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     LegalConditionComponent,
     PaymentComponent,
     WelcomeComponent,
+    ValidationScreenComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,19 +2,63 @@ p{
     font-style: italic;
 }
 
+h1 {
+    font-size: 2.7vw !important;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h3{
+    font-size: 2.5vw;
+    position: fixed;
+    top: 19% !important;
+    font-family: 'Renogare' !important;
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+    margin: 0 !important;
+  }
+
 #countdownSection{
     display: flex;
-    align-items: center;
-    margin-left: 350px;
-    margin-top: 203px;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
+
 #countdown{
     font-size: 4em;
     font-style: normal;
-    position: absolute;
-    margin-left: 45px;
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 27%;
+    margin: 0 !important;
 }
 
 #countdownSection img{
-    width: 8%;
+    width: 55%;
+}
+
+#noReverso>img{
+    width: 13%;
+    right: 19%;
+    position: fixed;
+    top: 69%;
+}
+
+#btnValidRetry{
+    position:fixed;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back{
+    display: none;
 }

@@ -11,20 +11,37 @@
     width: 86%;
 }
 
-h1{
-    margin-top: 179px !important;
-    font-size: 3.5em !important;
+#info {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
 }
 
+#photo {
+    width: 86%;
+}
+
+h1 {
+    font-size: 4.5vw;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 #Subtitle{
+    font-size: 2.5vw;
+    position: fixed;
+    top: 18%;
+    width: 100%;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;    
-    color: #80cada;
-    font-family: renogare;
-    font-size : 3.2em;
-    font-weight: 100 !important;
-    margin-bottom: 50px;
+    margin-top: 1vw;
+     
 }
 
 
@@ -34,7 +51,7 @@ h1{
 #loQuiero{
     width: 11%;
     position: absolute;
-    margin-left: 37.7%;
+    margin-left: 43%;
     margin-top: -140px;
     border-radius: 9px;
 }
@@ -79,6 +96,10 @@ p{
 #informations h3{
     font-family: renogare;
     font-size: 1.2em;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 5px !important;
+    margin-top: 40px;
 }
 
 .informationList p{

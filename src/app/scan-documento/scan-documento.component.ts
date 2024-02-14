@@ -21,7 +21,7 @@ export class ScanDocumentoComponent {
     this.countdown = 5;
     let interval = setInterval(() => {
       if (this.countdown > 0) {
-        this.countdown--;
+        this.countdown;
       } else {
         if (this.router.url == '/scan-documento') {
           this.router.navigate(['/face-result']);

@@ -11,6 +11,7 @@ export class FormPersonalInformationComponent implements AfterViewInit{
 
   allGood: boolean = true;
   canContinue: boolean = false;
+  keyBoardOpen: any;
 
   constructor(private route: Router) { }
 
@@ -24,8 +25,11 @@ export class FormPersonalInformationComponent implements AfterViewInit{
         element.addEventListener('focus', this.focus);
         element.addEventListener('blur', this.blur);
       }
-      
     }
+
+
+    
+
   }
 
   continuar(): void {
@@ -34,14 +38,14 @@ export class FormPersonalInformationComponent implements AfterViewInit{
 
     for (let index = 0; index < allInput.length; index++) {
       const element = allInput[index];
-      if (element.value == "" && element.type != "radio"){
+      if (element.value == ""  && element.name != 'segundoapellido'){
         element.placeholder = "Por favor, rellena este campo";
         element.style.borderBottom = "SOLID 1px red";
         this.allGood= false;
       }
-    }
+    } 
+    let listeInputRadio = document.getElementsByClassName("custom-radio");
     
-        
   }
 
   focus(event: any): void {
@@ -49,6 +53,10 @@ export class FormPersonalInformationComponent implements AfterViewInit{
       event.target.style.border = "none";
       event.target.style.borderBottom = "SOLID 1px #ccc";
     }
+    
+    document.getElementsByTagName("form")[0].style.transition = "0.7s";
+    document.getElementsByTagName("form")[0].style.top = "45%";
+    
   }
 
   blur(event: any): void {
@@ -58,7 +66,7 @@ export class FormPersonalInformationComponent implements AfterViewInit{
       this.canContinue= true;
       for (let index = 0; index < document.getElementsByTagName("input").length; index++) {
         const element = document.getElementsByTagName("input")[index];
-        if(element.value == "" && element.type != "radio"){
+        if(element.value == "" && element.type != "radio" && element.name != 'segundoapellido'){
           this.canContinue= false;
         }
       }
@@ -68,12 +76,13 @@ export class FormPersonalInformationComponent implements AfterViewInit{
       }
       console.log(this.canContinue);
     }else{
-      event.target.style.border = "none";
-      event.target.style.borderBottom = "SOLID 1px red";     
-
+      if(event.target.name != 'segundoapellido'){
+        event.target.style.border = "none";
+        event.target.style.borderBottom = "SOLID 1px red";     
+      }
     }
+    
+    document.getElementsByTagName("form")[0].style.top = "55%";
 
   }
-
-
 }

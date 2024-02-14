@@ -8,11 +8,11 @@ import { Router, ActivatedRoute} from "@angular/router";
 export class AppService {
 
     routesBackwards: any = {
-        "/full-prepayment": "/pagina-principal",
-        "/prepaid-tariffs": "/full-prepayment",
-        "/want-contract": "/prepaid-tariffs",
+        "/full-prepayment": "/prepaid-tariffs",
+        "/prepaid-tariffs": "/pagina-principal",
+        "/want-contract": "/full-prepayment",
         "/home-check-identity": "/want-contract",
-        "/face-result": "/home-check-identity",
+        "/face-result": "/face-capture",
         "/registry-document": "/face-result",
         "/scan-documento": "/registry-document",
         "/identity-validation": "/scan-documento",

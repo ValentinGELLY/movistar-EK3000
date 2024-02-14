@@ -1,6 +1,21 @@
-h1{
-    margin-top: 9% !important;
-}
+h1 {
+    font-size: 4.5vw;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h3{
+    font-size: 2.5vw;
+    position: fixed;
+    top: 22%;
+    font-family: 'GothamLight';
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+  }
+
 
 main{
     width: 55%;
@@ -11,16 +26,31 @@ main{
 }
 
 h2{
+    position: fixed;
+    top: 25%;
     text-align: left !important;
+    width: 60%;
 }
 
-p{
+#firstP{
     text-align: justify;
+    position: fixed;
+    top: 40%;
+    width: 50%;
+}
+
+#secondP{
+    text-align: justify;
+    position: fixed;
+    top: 50%;
+    width: 50%;
 }
 
 #continuar{
-    width: 100%;
     text-align: right;
+    position: fixed;
+    width: 60%;
+    top: 70%;
 }
 
 #continuar img{

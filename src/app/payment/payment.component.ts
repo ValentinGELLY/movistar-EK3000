@@ -12,7 +12,7 @@ countdown: any;
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.countdown = 15;
+    this.countdown = 5;
     let interval = setInterval(() => {
       this.countdown--;
       if(this.countdown == 0 && this.router.url == "/payment"){
